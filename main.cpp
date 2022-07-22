@@ -1,6 +1,6 @@
-#include <cstdint>
+#include "parse.h"
 #include <iostream>
-#include <vector>
+
 #include <bsoncxx/json.hpp>
 #include <mongocxx/client.hpp>
 #include <mongocxx/stdx.hpp>
@@ -16,7 +16,7 @@ using bsoncxx::builder::stream::document;
 using bsoncxx::builder::stream::finalize;
 using bsoncxx::builder::stream::open_array;
 using bsoncxx::builder::stream::open_document;
-using std::string;
+
 
 int main() {
     mongocxx::instance instance{}; // This should be done only once.

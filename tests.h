@@ -1,5 +1,5 @@
 //
-// Created by Kanstantin Kachanouski on 21.07.22.
+// Created by consta
 //
 
 #ifndef NGINX_LOGS_TO_MONGO_TESTS_H
