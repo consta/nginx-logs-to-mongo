@@ -20,7 +20,7 @@ struct log_record {
     std::string path;
     std::string http_version;
     int status;
-    long body_bytes_sent;
+    int body_bytes_sent;
     std::string http_referer;
     std::string http_user_agent;
 };
