@@ -18,18 +18,6 @@ using bsoncxx::builder::stream::open_array;
 using bsoncxx::builder::stream::open_document;
 using std::string;
 
-struct LOG_RECORD {
-    string remote_addr;
-    string server_name;
-    string remote_user;
-    string time_local;
-    string request;
-    int status;
-    long body_bytes_sent;
-    string http_referer;
-    string http_user_agent;
-} log_record;
-
 int main() {
     mongocxx::instance instance{}; // This should be done only once.
     mongocxx::uri uri("mongodb://localhost:27017");
